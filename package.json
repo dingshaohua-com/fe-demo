@@ -1,0 +1,12 @@
+{
+  "name": "fe-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "vue2-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@form-create/element-ui": "^2.5",
+    "@vue/composition-api": "^1.7.2",
+    "axios": "^1.7.7",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.13",
+    "element-ui": "^2.15.14",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "sass": "^1.81.0",
+    "unplugin-vue2-script-setup": "^0.11.4",
+    "vue": "2.6.14",
+    "vue-router": "3.6.5",
+    "vue2-helpers": "1.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "sass-loader": "^16.0.3",
+    "vue-template-compiler": "2.6.14"
+  }
+}
