@@ -10,6 +10,7 @@ import microApp from '@micro-zoe/micro-app'
 
 microApp.start({
     // 'router-mode': "native"
+    iframeSrc: location.origin+'/empty.html',
 })
 const app = createApp(App);
 app.use(router).use(Antd).mount('#app');
