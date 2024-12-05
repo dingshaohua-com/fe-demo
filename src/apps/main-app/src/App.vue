@@ -19,7 +19,7 @@
 </template>
 <script setup lang="ts">
 import { useRouter } from "vue-router";
-import { reactive, ref, watch, VueElement, h } from "vue";
+import { reactive, ref, VueElement } from "vue";
 import type { MenuProps, ItemType } from "ant-design-vue";
 
 const router = useRouter();
@@ -49,8 +49,8 @@ const items: ItemType[] = reactive([
 
   { type: "divider" },
 
-  getItem("微应用vue2", "vue2-demo-app"),
-  getItem("微应用vue3", "vue3-demo-app"),
+  getItem("微应用vue2", "vue2-demo"),
+  getItem("微应用vue3", "vue3-demo"),
 ]);
 
 const handleClick: MenuProps["onClick"] = (e: any) => {
