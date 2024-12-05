@@ -1,4 +1,3 @@
 packages:
-  - 'src/apps/main-app/*'
-  - 'src/apps/sub-app/*'
-# link-workspace-packages: true
+  - 'src/apps/**'
+link-workspace-packages: true
