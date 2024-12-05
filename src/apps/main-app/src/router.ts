@@ -10,11 +10,11 @@ const routes = [
   { path: "/page-one", component: PageOne },
   { path: "/page-two", component: Pagetwo },
   {
-    path: "/vue2-demo",
+    path: "/vue2-demo-page",
     component: Vue2Demo,
   },
   {
-    path: "/vue3-demo",
+    path: "/vue3-demo-page",
     component: Vue3Demo,
   },
 ];
