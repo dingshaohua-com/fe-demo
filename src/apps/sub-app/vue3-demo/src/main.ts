@@ -18,6 +18,7 @@ const app = createApp(App);
 app.use(hljsVuePlugin).use(ElementPlus).use(router).mount('#app');
 
 // 卸载应用
+// @ts-ignore
 window.unmount = () => {
   app.unmount()
 }

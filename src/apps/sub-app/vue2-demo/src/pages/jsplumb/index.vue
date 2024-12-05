@@ -114,7 +114,7 @@
       });
     }
     // 监听点击端点事件
-    jsplumb.bind(EVENT_ENDPOINT_CLICK, (endpoint, originalEvent) => {
+    jsplumb.bind(EVENT_ENDPOINT_CLICK, (endpoint) => {
       let dataIdClass = endpoint.parameters.customId;
       dataIdClass = dataIdClass.substring(1);
   
