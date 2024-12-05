@@ -16,7 +16,7 @@ const routes = [
  
 // 创建 router 实例
 export default new VueRouter({
-  base:'./vue2-demo/',
+  base:'/vue2-demo/',
   mode:'history',
   routes 
 })
