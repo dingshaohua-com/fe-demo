@@ -6,6 +6,6 @@
 import { ref } from 'vue';
 
 const origin = ref(window.location.origin);
-console.log(`${origin}/vue3-demo`);
+console.log(`${origin.value}/vue3-demo`);
 
 </script>
