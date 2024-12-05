@@ -10,7 +10,7 @@ const routes = [
 ];
 
 export default createRouter({
-  // history: createWebHistory("/vue3"),
-  history: createWebHistory(),
+  history: createWebHistory("/vue3-demo"),
+  // history: createWebHistory(),
   routes,
 });
