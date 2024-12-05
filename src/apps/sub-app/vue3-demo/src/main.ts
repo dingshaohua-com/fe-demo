@@ -17,6 +17,8 @@ hljs.registerLanguage('javascript', javascript);
 const app = createApp(App);
 app.use(hljsVuePlugin).use(ElementPlus).use(router).mount('#app');
 
+console.log("子应用 vue3，是作为微应用吗？ ", window.__MICRO_APP_ENVIRONMENT__);
+
 // 卸载应用
 // @ts-ignore
 window.unmount = () => {
