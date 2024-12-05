@@ -10,7 +10,11 @@ jobs:
     steps:
       - name: 迁出代码
         uses: actions/checkout@main
-
+      
+      - name: 切换为pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: 安装Node
         uses: actions/setup-node@main
