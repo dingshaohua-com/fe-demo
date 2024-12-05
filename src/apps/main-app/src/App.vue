@@ -49,8 +49,8 @@ const items: ItemType[] = reactive([
 
   { type: "divider" },
 
-  getItem("微应用vue2", "vue2-demo-page"),
-  getItem("微应用vue3", "vue3-demo-page"),
+  getItem("微应用vue2", "v2"),
+  getItem("微应用vue3", "v3"),
 ]);
 
 const handleClick: MenuProps["onClick"] = (e: any) => {
