@@ -4,6 +4,7 @@
       <div class="tip">子应用</div>
       <div>技术：vue2、element ui</div>
     </div>
+    <hr class="myhr">
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -70,12 +71,18 @@ const handleSelect = (key, keyPath) => {
       background-color: #53f133;
       font-size: 12px;
       color: white;
-      
     }
   }
+  .myhr{
+    margin: 10px 0;
+    border-width: 1px;
+    border-style:dashed;
+    border-color: black;
+  }
 
-  .content{
+  .content {
     padding-top: 30px;
+    border-width:2px ;
   }
 }
 </style>

@@ -4,6 +4,7 @@
       <div class="tip">子应用</div>
       <div>技术：vue3、element plus</div>
     </div>
+    <hr class="myhr">
     <nav>
       <el-button type="primary">
         <RouterLink to="/">两表格连线页面</RouterLink></el-button
@@ -45,9 +46,16 @@
       color: white;
     }
   }
+  .myhr{
+    margin: 10px 0;
+    border-width: 1px;
+    border-style:dashed;
+    border-color: black;
+  }
 
   .content {
     padding-top: 30px;
+    border-width:2px ;
   }
 }
 </style>
