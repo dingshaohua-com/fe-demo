@@ -1,12 +1,10 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Jsplumb from "../pages/jsplumb/index.vue";
-import Schedule from "../pages/schedule/index.vue";
-import Hello from "../pages/hello/index.vue";
 
-const routes = [
-  { path: "/", component: Jsplumb },
-  { path: "/hello", component: Hello },
-  { path: "/schedule", component: Schedule },
+const routes: any = [
+  { path: "/", redirect: '/hello' },
+  { path: "/hello", component:()=>import("../pages/hello/index.vue") },
+  { path: "/schedule", component:()=>import("../pages/schedule/index.vue") },
+  { path: "/jsplumb", component:()=>import("../pages/jsplumb/index.vue") },
 ];
 
 export default createRouter({

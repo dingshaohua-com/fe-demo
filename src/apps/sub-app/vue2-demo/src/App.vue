@@ -4,32 +4,36 @@
       <div class="tip">子应用</div>
       <div>技术：vue2、element ui</div>
     </div>
-    <hr class="myhr">
-    <el-menu
-      :default-active="activeIndex"
-      class="el-menu-demo"
-      mode="horizontal"
-      @select="handleSelect"
-    >
-      <el-menu-item v-for="item in navs" :index="item.path">{{
-        item.label
-      }}</el-menu-item>
-    </el-menu>
+    <hr class="myhr" />
+    <div class="navs">
+      <el-tag
+        v-for="item in navs"
+        :key="item.path"
+        :effect="activeIndex === item.path ? 'dark' : 'plain'"
+        @click="handleSelect(item)"
+      >
+        {{ item.label }}
+      </el-tag>
+    </div>
+    <el-divider/>
     <div class="content">
       <router-view></router-view>
     </div>
   </div>
 </template>
 <script setup>
-import vue from "vue";
-import { ref } from "@vue/composition-api";
+import { ref, watch } from "@vue/composition-api";
 import { useRoute, useRouter } from "vue2-helpers/vue-router";
 
 const route = useRoute();
 const router = useRouter();
 const navs = [
   {
-    path: "/",
+    path: "/hello",
+    label: "主页",
+  },
+  {
+    path: "/tc-sched",
     label: "排课",
   },
   {
@@ -41,9 +45,15 @@ const navs = [
     label: "排课表2",
   },
 ];
-const activeIndex = ref(route.path);
-const handleSelect = (key, keyPath) => {
-  router.push(key);
+
+
+const activeIndex = ref("");
+watch(()=>route.path,(val)=>{
+  activeIndex.value = val;
+  
+},{immediate: true})
+const handleSelect = (item) => {
+  router.push(item.path);
 };
 </script>
 <style scoped lang="scss">
@@ -73,16 +83,24 @@ const handleSelect = (key, keyPath) => {
       color: white;
     }
   }
-  .myhr{
+  .myhr {
     margin: 10px 0;
     border-width: 1px;
-    border-style:dashed;
+    border-style: dashed;
     border-color: black;
+  }
+
+  .navs {
+    margin: 10px 0;
+    .el-tag {
+      margin-right: 10px;
+      cursor: pointer;
+    }
   }
 
   .content {
     padding-top: 30px;
-    border-width:2px ;
+    border-width: 2px;
   }
 }
 </style>
