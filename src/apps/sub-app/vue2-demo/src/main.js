@@ -15,8 +15,6 @@ Vue.use(ElementUI,{locale});
 Vue.use(formCreate)
 Vue.config.productionTip = false
 
-console.log('__MICRO_APP_ENVIRONMENT__', window.__MICRO_APP_ENVIRONMENT__);
-
 
 const app = new Vue({
   router,

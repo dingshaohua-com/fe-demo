@@ -44,6 +44,10 @@ const navs = [
     path: "/schedule",
     label: "日程冲突页面",
   },
+  {
+    path: "/vs-vue2",
+    label: "对比vue2",
+  },
 ];
 
 

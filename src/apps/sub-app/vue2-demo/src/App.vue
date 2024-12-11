@@ -44,6 +44,10 @@ const navs = [
     path: "/course-conflict2",
     label: "排课表2",
   },
+  {
+    path: "/vs-vue3",
+    label: "对比vue3",
+  },
 ];
 
 

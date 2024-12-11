@@ -19,6 +19,7 @@ const routes = [
   { path: '/tc-sched', component: ()=>import("./pages/tc-sched.vue") },
   { path: '/course-conflict1', component: ()=>import("./pages/course-conflict1.vue") },
   { path: '/course-conflict2', component: ()=>import("./pages/course-conflict2.vue") },
+  { path: '/vs-vue3', component: ()=>import("./pages/vs-vue3.vue") },
 ]
  
 // 创建 router 实例
